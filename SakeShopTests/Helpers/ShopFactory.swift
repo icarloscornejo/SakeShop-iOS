@@ -4,13 +4,13 @@ import Foundation
 /// Test data builder for Shop and related models.
 enum ShopFactory {
     static func makeShop(
-        id: UUID = UUID(),
+        id: String = "test-shop-id",
         name: String = "Test Shop",
         description: String = "Test description",
         picture: URL? = URL(string: "https://example.com/image.jpg"),
         rating: Double = 4.0,
         address: String = "Test Address",
-        coordinates: [Double] = [0.0, 0.0],
+        coordinate: Coordinate? = nil,
         googleMapsLink: URL? = URL(string: "https://maps.app.goo.gl/test"),
         website: URL? = URL(string: "https://example.com")
     ) -> Shop {
@@ -21,7 +21,7 @@ enum ShopFactory {
             picture: picture,
             rating: rating,
             address: address,
-            coordinates: coordinates,
+            coordinate: coordinate,
             googleMapsLink: googleMapsLink,
             website: website
         )

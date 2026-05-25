@@ -6,6 +6,10 @@ struct StarRatingView: View {
 
     private enum Constants {
         static let maxRating = 5
+        static let starSpacing: CGFloat = 2
+        static let starColor = Color.yellow
+        static let filledStarOffset = 0.75
+        static let halfStarOffset = 0.25
         static let filledStar = "star.fill"
         static let halfStar = "star.leadinghalf.filled"
         static let emptyStar = "star"
@@ -13,10 +17,10 @@ struct StarRatingView: View {
     }
 
     var body: some View {
-        HStack(spacing: 2) {
+        HStack(spacing: Constants.starSpacing) {
             ForEach(0..<Constants.maxRating, id: \.self) { index in
                 starImage(for: index)
-                    .foregroundColor(.yellow)
+                    .foregroundColor(Constants.starColor)
             }
             Text(String(format: Constants.ratingFormat, rating))
                 .font(.caption)
@@ -25,8 +29,8 @@ struct StarRatingView: View {
     }
 
     private func starImage(for index: Int) -> Image {
-        let filled = Double(index) + 0.75
-        let half = Double(index) + 0.25
+        let filled = Double(index) + Constants.filledStarOffset
+        let half = Double(index) + Constants.halfStarOffset
         if rating >= filled {
             return Image(systemName: Constants.filledStar)
         } else if rating >= half {

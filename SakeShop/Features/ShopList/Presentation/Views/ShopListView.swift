@@ -13,6 +13,9 @@ struct ShopListView: View {
             content
                 .navigationTitle(Strings.ShopList.navigationTitle)
                 .task { await viewModel.loadShops() }
+                .navigationDestination(for: Shop.self) { shop in
+                    ShopDetailView(viewModel: container.makeShopDetailViewModel(shop: shop))
+                }
         }
     }
 
@@ -23,7 +26,7 @@ struct ShopListView: View {
             ProgressView()
         case .loaded(let shops):
             List(shops) { shop in
-                NavigationLink(destination: ShopDetailView(viewModel: container.makeShopDetailViewModel(shop: shop))) {
+                NavigationLink(value: shop) {
                     ShopRowView(shop: shop)
                 }
             }
