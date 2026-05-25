@@ -17,24 +17,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010024F5C183A9FA52EE0C09 /* ListHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListHeaderView.swift; path = SakeShop/Features/ShopList/Presentation/Views/ListHeaderView.swift; sourceTree = "<group>"; };
+		0CEF6AEE8A459E4CB1AE1F5D /* ShopImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopImageView.swift; path = SakeShop/Core/DesignSystem/Components/ShopImageView.swift; sourceTree = "<group>"; };
+		10E5646F96D0492113D41309 /* DetailDefinitionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetailDefinitionRow.swift; path = SakeShop/Features/ShopDetail/Presentation/Views/DetailDefinitionRow.swift; sourceTree = "<group>"; };
+		11B582B0C0C7CFF395A22AC7 /* IconButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconButton.swift; path = SakeShop/Core/DesignSystem/Components/IconButton.swift; sourceTree = "<group>"; };
+		27D53C84F5C9A417A6DD463D /* ShopListLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopListLoadingView.swift; path = SakeShop/Features/ShopList/Presentation/Views/ShopListLoadingView.swift; sourceTree = "<group>"; };
+		3B0BF5340C3FA897BFF7788C /* PrimaryButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrimaryButton.swift; path = SakeShop/Core/DesignSystem/Components/PrimaryButton.swift; sourceTree = "<group>"; };
 		6E089AB02FC3F30D00F97F5B /* SakeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SakeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E089ABD2FC3F30E00F97F5B /* SakeShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SakeShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E089B3B2FC40BF400F97F5B /* SakeShop.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; path = SakeShop.xctestplan; sourceTree = "<group>"; };
+		6E089B3B2FC40BF400F97F5B /* SakeShop.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SakeShop.xctestplan; sourceTree = "<group>"; };
+		852E0F26477C781211C7D2A2 /* Typography.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typography.swift; path = SakeShop/Core/DesignSystem/Typography.swift; sourceTree = "<group>"; };
+		8B79A546BB37EEF4D6341987 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = SakeShop/Core/DesignSystem/Theme.swift; sourceTree = "<group>"; };
+		99691C7A6D633E3859D56A01 /* ShopGradientPlaceholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopGradientPlaceholder.swift; path = SakeShop/Core/DesignSystem/Components/ShopGradientPlaceholder.swift; sourceTree = "<group>"; };
+		9F016C7FF06CA7D3E4B063BF /* SecondaryButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecondaryButton.swift; path = SakeShop/Core/DesignSystem/Components/SecondaryButton.swift; sourceTree = "<group>"; };
+		A8D4B4A3FA8ABE5E3459350A /* ErrorPrimaryButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorPrimaryButton.swift; path = SakeShop/Core/DesignSystem/Components/ErrorPrimaryButton.swift; sourceTree = "<group>"; };
+		C5B77B0B6DE640DE03E3ADD7 /* Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = SakeShop/Core/DesignSystem/Colors.swift; sourceTree = "<group>"; };
+		C752F405021C5C82FA17C3F7 /* ShopListErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopListErrorView.swift; path = SakeShop/Features/ShopList/Presentation/Views/ShopListErrorView.swift; sourceTree = "<group>"; };
+		C9396179C8D3A9956F594D0C /* SafariView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariView.swift; path = SakeShop/Core/Views/SafariView.swift; sourceTree = "<group>"; };
+		CC15A4F81C1B16A8D92026D4 /* ShopListEmptyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopListEmptyView.swift; path = SakeShop/Features/ShopList/Presentation/Views/ShopListEmptyView.swift; sourceTree = "<group>"; };
+		FCA0DFD871A9D1F84DD8A838 /* ShopNavigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopNavigation.swift; path = SakeShop/Core/Navigation/ShopNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6E089AB22FC3F30D00F97F5B /* SakeShop */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = SakeShop;
 			sourceTree = "<group>";
 		};
 		6E089AC02FC3F30E00F97F5B /* SakeShopTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = SakeShopTests;
 			sourceTree = "<group>";
 		};
 		6E089ACA2FC3F30E00F97F5B /* SakeShopUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = SakeShopUITests;
 			sourceTree = "<group>";
 		};
@@ -58,6 +80,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00F0BA591B6E185AB878C248 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				010024F5C183A9FA52EE0C09 /* ListHeaderView.swift */,
+				27D53C84F5C9A417A6DD463D /* ShopListLoadingView.swift */,
+				CC15A4F81C1B16A8D92026D4 /* ShopListEmptyView.swift */,
+				C752F405021C5C82FA17C3F7 /* ShopListErrorView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0BBC24391E14E2BF8ECDDC38 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				99691C7A6D633E3859D56A01 /* ShopGradientPlaceholder.swift */,
+				0CEF6AEE8A459E4CB1AE1F5D /* ShopImageView.swift */,
+				11B582B0C0C7CFF395A22AC7 /* IconButton.swift */,
+				3B0BF5340C3FA897BFF7788C /* PrimaryButton.swift */,
+				9F016C7FF06CA7D3E4B063BF /* SecondaryButton.swift */,
+				A8D4B4A3FA8ABE5E3459350A /* ErrorPrimaryButton.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		2EE542F31EAF8F381D368747 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9396179C8D3A9956F594D0C /* SafariView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		430A888262D74CAE32AB461E /* SakeShop */ = {
+			isa = PBXGroup;
+			children = (
+				E68E768420C931BF9A233E99 /* Core */,
+				6C891C6B2857383674F60FFD /* Features */,
+			);
+			name = SakeShop;
+			sourceTree = "<group>";
+		};
+		57AF9BF150803A693A5752B2 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FCA0DFD871A9D1F84DD8A838 /* ShopNavigation.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		6473775F1485CAEDA982689C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				00F0BA591B6E185AB878C248 /* Views */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		68D453EB4A7EA391558CB3CC /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				C5B77B0B6DE640DE03E3ADD7 /* Colors.swift */,
+				852E0F26477C781211C7D2A2 /* Typography.swift */,
+				8B79A546BB37EEF4D6341987 /* Theme.swift */,
+				0BBC24391E14E2BF8ECDDC38 /* Components */,
+			);
+			name = DesignSystem;
+			sourceTree = "<group>";
+		};
+		6C891C6B2857383674F60FFD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C9B1328EF42E178115F35F9E /* ShopList */,
+				B2C081C73435DCB0C9CC53E1 /* ShopDetail */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
 		6E089AA72FC3F30D00F97F5B = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +165,7 @@
 				6E089AC02FC3F30E00F97F5B /* SakeShopTests */,
 				6E089ACA2FC3F30E00F97F5B /* SakeShopUITests */,
 				6E089AB12FC3F30D00F97F5B /* Products */,
+				430A888262D74CAE32AB461E /* SakeShop */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +176,48 @@
 				6E089ABD2FC3F30E00F97F5B /* SakeShopTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A1287B2E7B4724119DD81F9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10E5646F96D0492113D41309 /* DetailDefinitionRow.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B2C081C73435DCB0C9CC53E1 /* ShopDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D9BEB355DC69B3451C9F8168 /* Presentation */,
+			);
+			name = ShopDetail;
+			sourceTree = "<group>";
+		};
+		C9B1328EF42E178115F35F9E /* ShopList */ = {
+			isa = PBXGroup;
+			children = (
+				6473775F1485CAEDA982689C /* Presentation */,
+			);
+			name = ShopList;
+			sourceTree = "<group>";
+		};
+		D9BEB355DC69B3451C9F8168 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A1287B2E7B4724119DD81F9D /* Views */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		E68E768420C931BF9A233E99 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				68D453EB4A7EA391558CB3CC /* DesignSystem */,
+				57AF9BF150803A693A5752B2 /* Navigation */,
+				2EE542F31EAF8F381D368747 /* Views */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,8 +239,6 @@
 				6E089AB22FC3F30D00F97F5B /* SakeShop */,
 			);
 			name = SakeShop;
-			packageProductDependencies = (
-			);
 			productName = SakeShop;
 			productReference = 6E089AB02FC3F30D00F97F5B /* SakeShop.app */;
 			productType = "com.apple.product-type.application";
@@ -120,8 +260,6 @@
 				6E089AC02FC3F30E00F97F5B /* SakeShopTests */,
 			);
 			name = SakeShopTests;
-			packageProductDependencies = (
-			);
 			productName = SakeShopTests;
 			productReference = 6E089ABD2FC3F30E00F97F5B /* SakeShopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -336,6 +474,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Sakaya;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +506,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Sakaya;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

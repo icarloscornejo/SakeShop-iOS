@@ -24,9 +24,9 @@ final class ShopListViewModel: ObservableObject {
             let shops = try await useCase.execute()
             state = shops.isEmpty ? .empty : .loaded(shops)
         } catch let error as AppError {
-            state = .error(error.errorDescription ?? Strings.ShopList.errorState)
+            state = .error(error.errorDescription ?? Strings.Error.unknown)
         } catch {
-            state = .error(Strings.ShopList.errorState)
+            state = .error(Strings.Error.unknown)
         }
     }
 

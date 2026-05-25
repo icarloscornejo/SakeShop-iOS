@@ -1,17 +1,34 @@
-/* ShopList Navigation */
-"shop_list.navigation_title" = "Sake Shops";
+/* Common */
+"common.back"             = "Back";
+"common.no_photo"         = "No photo";
+"common.image_load_error" = "Error while loading image";
 
 /* AppError */
-"error.data_not_found" = "Shop data could not be found.";
+"error.data_not_found"  = "Shop data could not be found.";
 "error.decoding_failed" = "Shop data is corrupted or malformed.";
+"error.unknown"         = "An unexpected error occurred.";
 
-/* Generic */
-"error.unknown" = "An unexpected error occurred.";
+/* ListHeader */
+"list_header.switch_to_dark"  = "Switch to dark mode";
+"list_header.switch_to_light" = "Switch to light mode";
 
 /* ShopList */
-"shop_list.empty_state" = "No sake shops available.";
-"shop_list.error_state" = "Failed to load shops. Please try again.";
-"shop_list.retry" = "Retry";
+"shop_list.navigation_title" = "Sake Shops";
+"shop_list.an_index_of"      = "An index of";
+"shop_list.title"            = "Sake shops\nin Nagano";
+"shop_list.updated_date"     = "updated May 2026";
+"shop_list.entries_format"   = "%d entries";
+"shop_list.end_of_list"      = "end of list";
+"shop_list.empty_title"      = "No shops yet";
+"shop_list.empty_body"       = "We couldn't find any sake shops to show.\nPull down to refresh, or check back later.";
+"shop_list.refresh"          = "Refresh";
+"shop_list.error_title"      = "Something went wrong";
+"shop_list.error_body"       = "We couldn't load the shop list.\nCheck your connection and try again.";
+"shop_list.retry"            = "Retry";
 
 /* ShopDetail */
+"shop_detail.address"      = "Address";
+"shop_detail.website"      = "Website";
+"shop_detail.coordinates"  = "Coordinates";
+"shop_detail.open_in_maps" = "Open in Maps";
 "shop_detail.visit_website" = "Visit Website";
