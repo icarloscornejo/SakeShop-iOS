@@ -1,0 +1,14 @@
+/* AppError */
+"error.data_not_found" = "Shop data could not be found.";
+"error.decoding_failed" = "Shop data is corrupted or malformed.";
+
+/* Generic */
+"error.unknown" = "An unexpected error occurred.";
+
+/* ShopList */
+"shop_list.empty_state" = "No sake shops available.";
+"shop_list.error_state" = "Failed to load shops. Please try again.";
+"shop_list.retry" = "Retry";
+
+/* ShopDetail */
+"shop_detail.visit_website" = "Visit Website";
