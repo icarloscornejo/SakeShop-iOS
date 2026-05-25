@@ -27,6 +27,7 @@
 		6E089AB02FC3F30D00F97F5B /* SakeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SakeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E089ABD2FC3F30E00F97F5B /* SakeShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SakeShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E089AC72FC3F30E00F97F5B /* SakeShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SakeShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E089B3B2FC40BF400F97F5B /* SakeShop.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; path = SakeShop.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +76,7 @@
 		6E089AA72FC3F30D00F97F5B = {
 			isa = PBXGroup;
 			children = (
+				6E089B3B2FC40BF400F97F5B /* SakeShop.xctestplan */,
 				6E089AB22FC3F30D00F97F5B /* SakeShop */,
 				6E089AC02FC3F30E00F97F5B /* SakeShopTests */,
 				6E089ACA2FC3F30E00F97F5B /* SakeShopUITests */,
