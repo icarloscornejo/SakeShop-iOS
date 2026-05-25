@@ -1,3 +1,6 @@
+/* ShopList Navigation */
+"shop_list.navigation_title" = "Sake Shops";
+
 /* AppError */
 "error.data_not_found" = "Shop data could not be found.";
 "error.decoding_failed" = "Shop data is corrupted or malformed.";

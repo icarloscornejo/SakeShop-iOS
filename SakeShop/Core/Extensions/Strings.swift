@@ -10,6 +10,7 @@ enum Strings {
     }
 
     enum ShopList {
+        static let navigationTitle = NSLocalizedString("shop_list.navigation_title", comment: "Navigation bar title for shop list screen")
         static let emptyState = NSLocalizedString("shop_list.empty_state", comment: "Shown when shop list returns no results")
         static let errorState = NSLocalizedString("shop_list.error_state", comment: "Shown when shop list fails to load")
         static let retry = NSLocalizedString("shop_list.retry", comment: "Retry button label")

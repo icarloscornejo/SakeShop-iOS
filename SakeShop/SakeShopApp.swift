@@ -1,17 +1,13 @@
-//
-//  SakeShopApp.swift
-//  SakeShop
-//
-//  Created by Carlos Cornejo on 24/5/26.
-//
-
 import SwiftUI
 
 @main
 struct SakeShopApp: App {
+    private let container = DIContainer()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ShopListView(viewModel: container.makeShopListViewModel())
+                .environmentObject(container)
         }
     }
 }
