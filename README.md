@@ -12,14 +12,16 @@ The app follows **Clean Architecture with MVVM** organized in a **modular featur
 SakeShop/
 ├── Contracts/                  ← Gherkin .feature files (cross-platform behavioral contracts)
 ├── Core/
-│   ├── DI/                     ← DIContainer (dependency wiring)
+│   ├── DI/                     ← DIContainer (dependency wiring + UITest state injection)
 │   ├── DesignSystem/           ← Colors, Typography, Theme, Components
 │   │   └── Components/         ← PrimaryButton, SecondaryButton, ErrorPrimaryButton,
 │   │                               IconButton, ShopImageView, ShopGradientPlaceholder
 │   ├── Domain/
 │   │   └── Models/             ← Coordinate (shared domain entity)
+│   ├── Extensions/             ← Strings (type-safe Localizable.strings wrapper),
+│   │                               AccessibilityIdentifiers (centralized a11y ID constants)
 │   ├── Networking/             ← JSONLoader, AppError
-│   ├── Extensions/             ← Strings (type-safe Localizable.strings wrapper)
+│   ├── UITesting/              ← EmptyShopRepository, ErrorShopRepository (#if DEBUG)
 │   └── Views/                  ← StarRatingView, SafariView (shared components)
 ├── Features/
 │   ├── ShopList/
@@ -39,10 +41,14 @@ SakeShop/
 │       └── Presentation/
 │           ├── ViewModels/     ← ShopDetailViewModel
 │           └── Views/          ← ShopDetailView, DetailDefinitionRow
-└── SakeShopTests/
-    ├── Helpers/                ← ShopFactory (test data builder)
-    ├── Mocks/                  ← MockShopRepository, MockShopListUseCase, MockShopDetailUseCase
-    └── Features/               ← Unit tests mirroring the feature structure
+├── SakeShopTests/
+│   ├── Helpers/                ← ShopFactory (test data builder)
+│   ├── Mocks/                  ← MockShopRepository, MockShopListUseCase, MockShopDetailUseCase
+│   └── Features/               ← Unit tests mirroring the feature structure
+└── SakeShopUITests/
+    ├── ShopListUITests.swift   ← shop_list.feature scenarios
+    ├── ShopDetailUITests.swift ← shop_detail.feature scenarios
+    └── DataLoadingUITests.swift← data_loading.feature scenarios
 ```
 
 ### Layer responsibilities
@@ -69,7 +75,13 @@ Contracts/
 └── data_loading.feature    ← Loading states, empty, error, retry, malformed data
 ```
 
-Every unit test references its corresponding Gherkin scenario via `// BDD:` inline comments, providing direct traceability from contract to implementation.
+The BDD contract strategy is fully implemented end-to-end:
+
+- Every **unit test** references its corresponding Gherkin scenario via `// BDD:` inline comments
+- Every **UI test** (XCUITest) in `SakeShopUITests/` maps directly to a `.feature` scenario, also annotated with `// BDD:` comments
+- State injection for UI tests (empty repository, error repository) uses `#if DEBUG`-guarded protocol implementations swapped in `DIContainer` via environment variable, with no impact on production code paths
+
+The result: full traceability from Gherkin contract to unit test to UI test, with **97.1% code coverage** across 1,776 executable lines.
 
 ---
 
@@ -92,7 +104,7 @@ None. The project uses only Apple frameworks:
 3. Select any iOS 26+ simulator
 4. **⌘+B** to build
 5. **⌘+R** to run
-6. **⌘+U** to run unit tests
+6. **⌘+U** to run tests - select scheme `SakeShop` for unit tests, `SakeShopUITests` for UI tests
 
 No package installation or environment configuration required.
 
@@ -126,7 +138,6 @@ For long-term maintainability, the following would be prioritized:
 
 - **Swift Package Manager modules** - extract each feature into its own SPM package to enforce hard architectural boundaries and reduce build times
 - **Remote data source** - implement `RemoteShopRepository` conforming to `ShopRepositoryProtocol`; swap in `DIContainer` with zero changes to the rest of the app
-- **UI tests** - implement the Gherkin scenarios as XCUITest steps using the existing `.feature` contracts
 
 ---
 
@@ -223,6 +234,16 @@ Final cleanup before commit:
 - Magic strings in `ShopDetailDisplayData` extracted to private named constant enums: `URLScheme` (`"https://"`, `"http://"`, `"/"`) and `Format` (`"%.3f, %.3f"`)
 - Duplicate `.xcodeproj` compile sources cleaned - the Round 3 Ruby script had added explicit `PBXBuildFile` entries for files already picked up by `fileSystemSynchronizedGroups` (Xcode's automatic folder sync). Every registered file was compiling twice, producing warnings on every build. All explicit entries removed; folder sync handles compilation.
 - App display name set to "Sakaya" via `INFOPLIST_KEY_CFBundleDisplayName` build setting
+
+**Round 8 - UI tests: full BDD coverage end-to-end**
+
+With unit tests already fully traced to Gherkin scenarios, the final step was closing the loop at the UI layer. The developer directed implementation of a complete `SakeShopUITests` target covering all three `.feature` contracts: `shop_list.feature`, `shop_detail.feature`, and `data_loading.feature` - 14 XCUITest methods in total, each annotated with a `// BDD:` comment tracing it to its Gherkin scenario.
+
+The state injection problem required a deliberate architectural decision. The `data_loading.feature` tests need to exercise the empty and error states without mocking the network - the solution was `EmptyShopRepository` and `ErrorShopRepository` as `#if DEBUG`-guarded protocol implementations, swapped in `DIContainer.init()` based on a launch environment variable. Production code paths are completely unaffected.
+
+Accessibility identifiers were centralized in a single `AccessibilityID` enum used by both production views and UITests as string literals - the UITest target cannot import the app target, so the strings act as the shared contract between the two.
+
+The developer resolved two issues during the test run: string mismatches between the expected accessibility identifiers and what the views were actually exposing, and SwiftUI `VStack` containers not surfacing as queryable elements in the accessibility hierarchy - resolved by applying the correct accessibility modifier to expose them. All 14 tests pass. The final coverage report: **97.1% across 1,776 executable lines**.
 
 ---
 

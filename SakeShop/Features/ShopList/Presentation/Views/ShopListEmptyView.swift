@@ -43,6 +43,8 @@ struct ShopListEmptyView: View {
             Spacer()
         }
         .frame(maxWidth: .infinity)
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier(AccessibilityID.ShopList.emptyView)
     }
 
     // MARK: - Bottle Glyph

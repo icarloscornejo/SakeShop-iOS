@@ -51,7 +51,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E089AC62FC3F30E00F97F5B"
+               BlueprintIdentifier = "3E02ABF5CEF311E302242A69"
                BuildableName = "SakeShopUITests.xctest"
                BlueprintName = "SakeShopUITests"
                ReferencedContainer = "container:SakeShop.xcodeproj">

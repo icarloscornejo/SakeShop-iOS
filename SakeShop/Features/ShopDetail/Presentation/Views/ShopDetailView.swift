@@ -40,6 +40,8 @@ struct ShopDetailView: View {
         }
         .background(Color.bg)
         .toolbar(.hidden, for: .navigationBar)
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier(AccessibilityID.ShopDetail.view)
         .sheet(isPresented: $showingWebsite) {
             if let website = viewModel.displayData.website {
                 SafariView(url: website)
@@ -101,6 +103,7 @@ struct ShopDetailView: View {
             .lineSpacing(30 * 0.15)
             .padding(.top, 10)
             .padding(.bottom, 4)
+            .accessibilityIdentifier(AccessibilityID.ShopDetail.name)
     }
 
     // MARK: - Rule

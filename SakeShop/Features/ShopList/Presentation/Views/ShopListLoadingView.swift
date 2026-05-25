@@ -19,6 +19,7 @@ struct ShopListLoadingView: View {
             titleBlock
             rowsBlock
         }
+        .accessibilityIdentifier(AccessibilityID.ShopList.loadingView)
     }
 
     // MARK: - Title block

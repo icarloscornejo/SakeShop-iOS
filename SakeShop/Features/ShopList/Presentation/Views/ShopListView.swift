@@ -40,6 +40,7 @@ struct ShopListView: View {
 
         case .loaded(let shops):
             loadedContent(shops: shops)
+                .accessibilityIdentifier(AccessibilityID.ShopList.scrollView)
 
         case .empty:
             ShopListEmptyView {
@@ -111,6 +112,7 @@ struct ShopListView: View {
                 ShopRowView(shop: shop, index: offset + 1)
             }
             .buttonStyle(.plain)
+            .accessibilityIdentifier(AccessibilityID.ShopRow.container)
             Rectangle().fill(Color.divider).frame(height: 1)
         }
     }

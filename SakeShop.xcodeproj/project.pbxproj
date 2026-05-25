@@ -6,8 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		459559C04C231E7DD4F404E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B0FDA740FF3B3DE3491B7D /* Foundation.framework */; };
+		7657BF8D5D96FCB688815BDA /* ShopListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1489D0CAE0389F1F5A025E3E /* ShopListUITests.swift */; };
+		8449B387994B962872556918 /* DataLoadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1969972372F14F9CB5D5CB15 /* DataLoadingUITests.swift */; };
+		CD42267C31D9747AF74FD02E /* ShopDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE272FF1715454462A46 /* ShopDetailUITests.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6E089ABE2FC3F30E00F97F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E089AA82FC3F30D00F97F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E089AAF2FC3F30D00F97F5B;
+			remoteInfo = SakeShop;
+		};
+		E3F6E47EA08777DAF288F124 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6E089AA82FC3F30D00F97F5B /* Project object */;
 			proxyType = 1;
@@ -21,8 +35,12 @@
 		0CEF6AEE8A459E4CB1AE1F5D /* ShopImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopImageView.swift; path = SakeShop/Core/DesignSystem/Components/ShopImageView.swift; sourceTree = "<group>"; };
 		10E5646F96D0492113D41309 /* DetailDefinitionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetailDefinitionRow.swift; path = SakeShop/Features/ShopDetail/Presentation/Views/DetailDefinitionRow.swift; sourceTree = "<group>"; };
 		11B582B0C0C7CFF395A22AC7 /* IconButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconButton.swift; path = SakeShop/Core/DesignSystem/Components/IconButton.swift; sourceTree = "<group>"; };
+		1489D0CAE0389F1F5A025E3E /* ShopListUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShopListUITests.swift; sourceTree = "<group>"; };
+		1969972372F14F9CB5D5CB15 /* DataLoadingUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataLoadingUITests.swift; sourceTree = "<group>"; };
 		27D53C84F5C9A417A6DD463D /* ShopListLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopListLoadingView.swift; path = SakeShop/Features/ShopList/Presentation/Views/ShopListLoadingView.swift; sourceTree = "<group>"; };
+		2CAAC1BE55926B18A46912D8 /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0BF5340C3FA897BFF7788C /* PrimaryButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrimaryButton.swift; path = SakeShop/Core/DesignSystem/Components/PrimaryButton.swift; sourceTree = "<group>"; };
+		69B0FDA740FF3B3DE3491B7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6E089AB02FC3F30D00F97F5B /* SakeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SakeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E089ABD2FC3F30E00F97F5B /* SakeShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SakeShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E089B3B2FC40BF400F97F5B /* SakeShop.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SakeShop.xctestplan; sourceTree = "<group>"; };
@@ -35,28 +53,23 @@
 		C752F405021C5C82FA17C3F7 /* ShopListErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopListErrorView.swift; path = SakeShop/Features/ShopList/Presentation/Views/ShopListErrorView.swift; sourceTree = "<group>"; };
 		C9396179C8D3A9956F594D0C /* SafariView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariView.swift; path = SakeShop/Core/Views/SafariView.swift; sourceTree = "<group>"; };
 		CC15A4F81C1B16A8D92026D4 /* ShopListEmptyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopListEmptyView.swift; path = SakeShop/Features/ShopList/Presentation/Views/ShopListEmptyView.swift; sourceTree = "<group>"; };
+		F70EEE272FF1715454462A46 /* ShopDetailUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShopDetailUITests.swift; sourceTree = "<group>"; };
 		FCA0DFD871A9D1F84DD8A838 /* ShopNavigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShopNavigation.swift; path = SakeShop/Core/Navigation/ShopNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6E089AB22FC3F30D00F97F5B /* SakeShop */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = SakeShop;
 			sourceTree = "<group>";
 		};
 		6E089AC02FC3F30E00F97F5B /* SakeShopTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = SakeShopTests;
 			sourceTree = "<group>";
 		};
 		6E089ACA2FC3F30E00F97F5B /* SakeShopUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = SakeShopUITests;
 			sourceTree = "<group>";
 		};
@@ -74,6 +87,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7C14A829E9D749C99178A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459559C04C231E7DD4F404E1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +187,8 @@
 				6E089ACA2FC3F30E00F97F5B /* SakeShopUITests */,
 				6E089AB12FC3F30D00F97F5B /* Products */,
 				430A888262D74CAE32AB461E /* SakeShop */,
+				800515733A5DE577588CBBE8 /* Frameworks */,
+				EDF79E44DEC030FCD71AF10C /* SakeShopUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,8 +197,25 @@
 			children = (
 				6E089AB02FC3F30D00F97F5B /* SakeShop.app */,
 				6E089ABD2FC3F30E00F97F5B /* SakeShopTests.xctest */,
+				2CAAC1BE55926B18A46912D8 /* .xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		800515733A5DE577588CBBE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8813BD2DCD18E1A9E62C72D2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8813BD2DCD18E1A9E62C72D2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				69B0FDA740FF3B3DE3491B7D /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		A1287B2E7B4724119DD81F9D /* Views */ = {
@@ -220,9 +260,37 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		EDF79E44DEC030FCD71AF10C /* SakeShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1489D0CAE0389F1F5A025E3E /* ShopListUITests.swift */,
+				F70EEE272FF1715454462A46 /* ShopDetailUITests.swift */,
+				1969972372F14F9CB5D5CB15 /* DataLoadingUITests.swift */,
+			);
+			path = SakeShopUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3E02ABF5CEF311E302242A69 /* SakeShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4A30E1C565C235B543E321 /* Build configuration list for PBXNativeTarget "SakeShopUITests" */;
+			buildPhases = (
+				384E5A99C209BCCAD7BD8CE5 /* Sources */,
+				8F7C14A829E9D749C99178A4 /* Frameworks */,
+				01801CDAF9005A904A8BE859 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B6856CE5F1A97C4BD9FB0B1 /* PBXTargetDependency */,
+			);
+			name = SakeShopUITests;
+			productName = SakeShopUITests;
+			productReference = 2CAAC1BE55926B18A46912D8 /* .xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		6E089AAF2FC3F30D00F97F5B /* SakeShop */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E089AD12FC3F30E00F97F5B /* Build configuration list for PBXNativeTarget "SakeShop" */;
@@ -274,6 +342,9 @@
 				LastSwiftUpdateCheck = 2650;
 				LastUpgradeCheck = 2650;
 				TargetAttributes = {
+					3E02ABF5CEF311E302242A69 = {
+						TestTargetID = 6E089AAF2FC3F30D00F97F5B;
+					};
 					6E089AAF2FC3F30D00F97F5B = {
 						CreatedOnToolsVersion = 26.5;
 					};
@@ -299,11 +370,19 @@
 			targets = (
 				6E089AAF2FC3F30D00F97F5B /* SakeShop */,
 				6E089ABC2FC3F30E00F97F5B /* SakeShopTests */,
+				3E02ABF5CEF311E302242A69 /* SakeShopUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01801CDAF9005A904A8BE859 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E089AAE2FC3F30D00F97F5B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +400,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		384E5A99C209BCCAD7BD8CE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7657BF8D5D96FCB688815BDA /* ShopListUITests.swift in Sources */,
+				CD42267C31D9747AF74FD02E /* ShopDetailUITests.swift in Sources */,
+				8449B387994B962872556918 /* DataLoadingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E089AAC2FC3F30D00F97F5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +431,12 @@
 			isa = PBXTargetDependency;
 			target = 6E089AAF2FC3F30D00F97F5B /* SakeShop */;
 			targetProxy = 6E089ABE2FC3F30E00F97F5B /* PBXContainerItemProxy */;
+		};
+		7B6856CE5F1A97C4BD9FB0B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SakeShop;
+			target = 6E089AAF2FC3F30D00F97F5B /* SakeShop */;
+			targetProxy = E3F6E47EA08777DAF288F124 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -571,6 +666,47 @@
 			};
 			name = Release;
 		};
+		D56546A57BED9BC19225AFE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prototype.SakeShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SakeShop;
+			};
+			name = Debug;
+		};
+		EDE50E9F11B1E3D9471C9313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prototype.SakeShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SakeShop;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,6 +733,15 @@
 			buildConfigurations = (
 				6E089AD52FC3F30E00F97F5B /* Debug */,
 				6E089AD62FC3F30E00F97F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4A30E1C565C235B543E321 /* Build configuration list for PBXNativeTarget "SakeShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE50E9F11B1E3D9471C9313 /* Release */,
+				D56546A57BED9BC19225AFE1 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
